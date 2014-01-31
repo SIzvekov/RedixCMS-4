@@ -1,0 +1,32 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^robots\.txt$ /robots.txt.php [L]
+RewriteRule ^sitemap.xml$ /sitemap.xml.php [L]
+
+RewriteCond %{REQUEST_FILENAME} .*\.(jpg|gif|png|bmp|jpeg) [NC]
+RewriteRule ^.*$ /showimg.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/admin/.*
+
+RewriteRule ^.*$ /admin/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !.*\.cur [NC]
+RewriteCond %{REQUEST_FILENAME} !.*\.ico [NC]
+RewriteRule ^.*$ /index.php [L]
+
+php_value magic_quotes_gpc Off
+php_flag register_globals off
+Options -Indexes
+
+#ExpiresActive On
+#ExpiresDefault A18000
+#ExpiresByType image/gif A2592000
+#ExpiresByType image/jpeg A2592000
+#ExpiresByType image/png A2592000

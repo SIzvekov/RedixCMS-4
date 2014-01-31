@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+a, abbr, acronym, address, applet, area, b, base, basefont, bdo, big, blockquote, body, br, button, caption, center, cite, code, col, colgroup, dd, del, dir, div, dfn, dl, dt, em, fieldset, font, form, frame, frameset, h1, h2, h3, h4, h5, h6, hr, i, iframe, img, input, ins, isindex, kbd, label, legend, link, map, menu, noframes, noscript, object, optgroup, option, p, param, pre, q, s, samp, select, small, span, strike, strong, style, sub, sup, tbody, textarea, tfoot, thead, tt, u, var {margin:0; padding:0;}
+.clr{clear:both;}
+img{border:none;}
+a{color: #000;text-decoration: underline;outline:none;}
+a:hover{color: #000;text-decoration: none;outline:none;}
+table{border: 0px;border-collapse: collapse;}
+td{vertical-align:top;padding:0px;}
+html{height:100%;width:100%;margin:0px;padding:0px;height:100%;}
+body{margin:0;padding:0;background-color:#FFFFFF;font-family: Arial, Helvetica, sans-serif;color:#000;font-size:14px;height:100%;}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+div.dialog{border:1px solid #000;background:#fff;width:800px;left:50%;top:30px;margin-left:-405px;padding:5px;}
